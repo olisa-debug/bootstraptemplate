@@ -23,7 +23,7 @@ section{
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content .team{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -316,4 +316,74 @@ position: relative;
 
 .skills .skills-content .right .MySQL::before{
     width: 70%;
+}
+
+ /* teams section styling */ 
+ .team .title::after{
+    content: "our team";
+ }
+ 
+ .team .carousel .card{
+    background: #124170;
+    border-radius: 6px;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+ }
+
+ .team .carousel .card:hover{
+    background: skyblue;
+ }
+
+ .team .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    transition: all 0.3s ease;
+ }
+
+ .team .carousel .card .box:hover{
+    transform: scale(1.05);
+ }
+
+
+.team .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.team .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid skyblue;
+    transition: all 0.3s ease;
+}
+
+.team .carousel .card:hover{
+    border-color: #fff;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid skyblue !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: skyblue;
 }
