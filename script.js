@@ -21,5 +21,6 @@ $('.carousel').owlCarousel({
             items: 3,
             nav: false
         }
+    } 
     });
 });
